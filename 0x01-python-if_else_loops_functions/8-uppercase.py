@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def uppercase(C):
     for i in C:
-        if ord(C) > 96 and ord(C) < 123:
-            C = chr(ord(C) - 32)
-        print('{}'.format(C), end='')
+        if ord(i) > 96 and ord(i) < 123:
+            i = chr(ord(C) - 32)
+        print('{}'.format(i), end='')
     print('')
