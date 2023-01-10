@@ -6,4 +6,4 @@ for i in numbers:
     elif (i >= 10 & i < 99):
         print('{}, '.format(i))
     else:
-        print('{}, '.format(i))
+        print('99, \n')
