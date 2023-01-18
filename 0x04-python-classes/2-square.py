@@ -1,14 +1,17 @@
 #!/usr/bin/python3
-Square = __import__('3-square').Square
+"""Class Square."""
 
-my_square = Square(89)
-print("Area: {} for size: {}".format(my_square.area(), my_square.size))
 
-my_square.size = 3
-print("Area: {} for size: {}".format(my_square.area(), my_square.size))
+class Square:
+    """Represents a square."""
 
-try:
-    my_square.size = "5 feet"
-    print("Area: {} for size: {}".format(my_square.area(), my_square.size))
-except Exception as e:
-    print(e)
+    def __init__(self, size=0):
+        """Initialize a new Square.
+        Args:
+            size (int): The size of the new square.
+        """
+        if not isinstance(size, int):
+            raise TypeError("size must be an integer")
+        elif size < 0:
+            raise ValueError("size must be >= 0")
+        self.__size = 
