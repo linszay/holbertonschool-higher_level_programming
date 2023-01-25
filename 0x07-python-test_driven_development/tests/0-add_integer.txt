@@ -1,0 +1,17 @@
+First Module
+============
+
+Testing 0-add_integer
+---------------------
+
+This module is to test 0-add integer which should add
+two values and return the result:
+    """
+    >>> add_integer = __import__('0-add_integer).add_integer
+    >>> add_integer(1, 2)
+    3
+    >>> add_integer(100, -2)
+    98
+    >>> add_integer(4, "School")
+    TypeError: b must be an integer
+    """
