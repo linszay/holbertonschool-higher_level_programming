@@ -1,0 +1,18 @@
+Name Module
+===========
+
+Testing 3-say_my_name
+---------------------
+
+This module is to test 3-say_my_name which prints "My
+name is <first name> <last name>":
+    """
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("Lindsey", "Taube")
+    My name is Lindsey Taube
+    >>> say_my_name("Lindsey")
+    My name is Lindsey
+    >>> say_my_name(2, "Lindsey")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+    """
