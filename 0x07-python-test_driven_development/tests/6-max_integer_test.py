@@ -28,7 +28,7 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer(one_element), 3)
 
     def test_oneNeg_list(self):
-        oneNeg = [-1, 2, 3, 4]
+        oneNeg = [1, -2, 3, 4]
         self.assertEqual(max_integer(oneNeg), 4)
 
     def test_unordered_list(self):
@@ -39,3 +39,7 @@ class TestMaxInteger(unittest.TestCase):
     def test_float(self):
         float = [-4, 9, 8.1, 1386.8]
         self.assertEqual(max_integer(float), 1386.8)
+
+    def test_allNeg_list(self):
+        allNeg = [-1, -2, -3, -4]
+        self.assertEqual(max_integer(allNeg), -1)
