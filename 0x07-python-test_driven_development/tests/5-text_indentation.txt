@@ -12,8 +12,8 @@ a text with 2 new lines after each character(. ? :):
     Hi
  
     >>> text_indentation("Hello.   ")
-    Hello.
+    Hello.   
 
-    >>> text_indentation("Hi, how's it going?)
+    >>> text_indentation("Hi, how's it going?")
     Hi, how's it going?
 
