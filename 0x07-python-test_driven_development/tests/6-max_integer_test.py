@@ -31,3 +31,8 @@ class TestMaxInteger(unittest.TestCase):
         oneNeg = [1, -2, 3, 4]
         self.assertEqual(max_integer(oneNeg), 4)
 
+    def test_unordered_list(self):
+        """Test an unordered list of integers."""
+        unordered = [1, 2, 4, 3]
+        self.assertEqual(max_integer(unordered), 4)
+
