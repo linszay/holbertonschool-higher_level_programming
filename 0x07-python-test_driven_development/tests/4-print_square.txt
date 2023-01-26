@@ -6,7 +6,7 @@ Testing 4-print_square
 
 This module is to test 4-print_square which prints
 a square with '#':
-    """
+
     >>> print_square = __import__('4-print_square').print_square
     >>> print_square(1)
     #
@@ -17,7 +17,7 @@ a square with '#':
     ####
     >>> print_square(0)
 
-    >>>print_square(10)
+    >>> print_square(10)
     ##########
     ##########
     ##########
@@ -31,4 +31,4 @@ a square with '#':
     >>> print_square(-1)
     Traceback (most recent call last):
     ValueError: size must be >= 0
-    """
+
