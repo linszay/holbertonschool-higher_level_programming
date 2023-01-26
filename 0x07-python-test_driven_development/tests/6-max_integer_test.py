@@ -36,3 +36,6 @@ class TestMaxInteger(unittest.TestCase):
         unordered = [1, 2, 4, 3]
         self.assertEqual(max_integer(unordered), 4)
 
+    def test_float(self):
+        float = [-4, 9, 8.1, 1386.8]
+        self.assertEqual(max_integer(float), 1386.8)
