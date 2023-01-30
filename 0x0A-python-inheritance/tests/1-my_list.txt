@@ -1,0 +1,11 @@
+1-my_list.py
+============
+
+Testing 1-my_list.py
+--------------------
+
+This module is to test 1-my_list.py which creates a new
+class and inherits from list then returns a sorted list:
+
+    >>> MyList = __import__('1-my_list').MyList
+
