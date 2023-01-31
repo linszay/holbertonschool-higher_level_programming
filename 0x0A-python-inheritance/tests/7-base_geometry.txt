@@ -1,0 +1,23 @@
+7-base_geometry.py
+==================
+
+Testing 7-base_geometry.py
+--------------------------
+
+This module is to test 7-base_geometry.py which adds
+more instances to the class and then validates value:
+
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+    >>> geometry = BaseGeometry()
+    >>> geometry.integer_validator("width", 10)
+
+    >>> geometry.integer_validator("width", -10)
+    Traceback (most recent call last):
+    ...
+    ValueError: width must be greather than 0
+
+    >>> geometry.integer_validator("width", "10")
+    Traceback (most recent call last):
+    ...
+    TypeError: width must be an integer
