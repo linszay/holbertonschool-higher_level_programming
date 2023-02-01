@@ -9,3 +9,12 @@ class and inherits from list then returns a sorted list:
 
     >>> MyList = __import__('1-my_list').MyList
 
+    thislist = MyList()
+    >>> thislist.append('l')
+    >>> thislist.append('c')
+    >>> print(thislist)
+    ['l', 'c']
+    >>> thislist.print_sorted()
+    ['c', 'l']
+    >>> print(thislist)
+    ['l', 'c']
