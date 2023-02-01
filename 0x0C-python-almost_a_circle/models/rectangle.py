@@ -85,7 +85,7 @@ class Rectangle(Base):
         value += "{}/{} - ".format(self.x, self.y)
         value += "{}/{}".format(self.width, self.height)
         return value
-        
+
     def update(self, *args, **kwargs):
         """ Assigns key/value arguments to attributes """
         if args:
@@ -103,3 +103,13 @@ class Rectangle(Base):
         else:
             for key, value in kwargs.items():
                 setattr(self, key, value)
+
+    def to_dictionary(self):
+        """ Returns the dictionary representation of a Rectangle """
+        return {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
+        }
