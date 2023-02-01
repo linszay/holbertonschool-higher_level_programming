@@ -81,19 +81,24 @@ class Rectangle(Base):
 
     def __str__(self):
         """str function"""
-        return "[Rectangle] {}/{}".format(self.__width, self.__height)
-
-    def update(self, *args):
-        """update function"""
-        if len(args) == 0:
-            return
-        if len(args) >= 1:
-            self.id = args[0]
-        if len(args) >= 2:
-            self.width = args[1]
-        if len(args) >= 3:
-            self.height = args[2]
-        if len(args) >= 4:
-            self.x = args[3]
-        if len(args) >= 5:
-            self.y = args[4]
+        value = "[Rectangle] " + "({}) ".format(self.id)
+        value += "{}/{} - ".format(self.x, self.y)
+        value += "{}/{}".format(self.width, self.height)
+        return value
+    def update(self, *args, **kwargs):
+        """ Assigns key/value arguments to attributes """
+        if args:
+            for i, arg in enumerate(args):
+                if i == 0:
+                    self.id = arg
+                elif i == 1:
+                    self.width = arg
+                elif i == 2:
+                    self.height = arg
+                elif i == 3:
+                    self.x = arg
+                elif i == 4:
+                    self.y = arg
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
