@@ -30,8 +30,9 @@ if __name__ == "__main__":
     results = cursor.fetchall()
 
     # Displaying the results
-    for row in results:
-        print(row)
+    for state in results:
+        if state[0] <= 5:
+            print(state)
 
     # Closing the connection
     db.close()
