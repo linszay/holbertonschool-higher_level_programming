@@ -31,5 +31,5 @@ if __name__ == "__main__":
         if state[0] <= 5:
             print(state)
 
-    # Closing the connection
+    # Closing the connection to the database
     db.close()
