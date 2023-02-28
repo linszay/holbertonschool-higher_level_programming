@@ -21,17 +21,16 @@ if __name__ == "__main__":
     cursor = db.cursor()
 
     # Executing the query
-    cursor.execute("SELECT cities.name\
-                   FROM cities JOIN states\
-                   ON cities.state_id = states.id\
-                   WHERE states.name=%S\
-                   ORDER BY cities.id ASC", (sys.argv[4],))
-
+    cursor.execute("SELECT cities.id, cities.name, states.name\
+                    FROM cities JOIN states\
+                    ON cities.state_id = states.id\
+                    ORDER BY cities.id ASC")
     # Retrieving the results
     results = cursor.fetchall()
 
     # Displaying the results
-    print(", ".join([row[0] for row in results]))
+    for row in results:
+        print(row)
 
     # Closing the connection to the database
     db.close()
