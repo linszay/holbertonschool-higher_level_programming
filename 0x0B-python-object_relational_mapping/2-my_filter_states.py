@@ -34,8 +34,7 @@ if __name__ == "__main__":
 
     # Displaying the results
     for state in results:
-        if state[0] <= 5:
-            print(state)
+        print(state)
 
     # Closing the connection to the database
     db.close()
