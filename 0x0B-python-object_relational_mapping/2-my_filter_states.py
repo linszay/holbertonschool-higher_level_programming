@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     # Executing the query
     cursor.execute(
-        "SELECT * FROM states WHERE name LIKE BINARY'{}' \
+        "SELECT * FROM states WHERE name LIKE BINARY '{}' \
         ORDER BY id ASC".format(state_name))
 
     # Retrieving the results
