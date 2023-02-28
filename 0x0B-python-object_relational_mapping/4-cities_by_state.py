@@ -22,8 +22,8 @@ if __name__ == "__main__":
 
     # Executing the query
     cursor.execute("SELECT cities.id, cities.name, states.name\
-                   FROM states JOIN states\
-                   ON cities.state_id = states.id\
+                   FROM cities JOIN states\
+                   WHERE cities.state_id = states.id\
                    ORDER BY cities.id ASC")
 
     # Retrieving the results
