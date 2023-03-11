@@ -19,7 +19,6 @@ if __name__ == '__main__':
 
     if response.status_code == 200:
         data = response.json()
-        print("Your GitHub user ID is:", data['id'])
+        print("data['id']")
     else:
-        print("Error retrieving GitHub user information. HTTP status code:",
-              response.status_code)
+        print("None")
