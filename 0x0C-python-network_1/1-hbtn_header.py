@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""displays the value of the X-Request-Id variable"""
+"""displays value found in header of response"""
 import urllib.response
-import urllib.request
+import urllib
 import sys
 
 
