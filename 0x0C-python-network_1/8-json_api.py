@@ -7,7 +7,7 @@ a parameter
 import requests
 import sys
 
-if __name__ == "__name__":
+if __name__ == "__main__":
     if len(sys.argv) == 2:
         letter = sys.argv[1]
     else:
@@ -15,6 +15,7 @@ if __name__ == "__name__":
 
     url = "http://0.0.0.0:5000/search_user"
     info = {"q": letter}
+    print("info")
 
     req = requests.post(url, data=info)
 
