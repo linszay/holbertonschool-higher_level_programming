@@ -5,7 +5,7 @@ const fs = require('fs');
 const url = process.argv[2];
 const filePath = process.argv[3];
 
-request(url, (error, response, body) => {
+request.get(url, (error, response, body) => {
   if (error) {
     console.error(error);
     return;
@@ -21,6 +21,5 @@ request(url, (error, response, body) => {
       console.error(error);
       return;
     }
-    console.log(`Successfully saved to file: ${filePath}`);
   });
 });
